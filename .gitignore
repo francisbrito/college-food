@@ -86,3 +86,5 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
+# Bower
+public/lib
