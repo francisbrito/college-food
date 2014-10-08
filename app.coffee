@@ -2,11 +2,18 @@
 express = require 'express'
 app     = express()
 
+path    = require 'path'
+
 # Configuration.
 port    = process.env.PORT || 3000
 
-# Routing.
+# Templating
+app.set 'views', path.join __dirname, 'views'
+app.set 'views engine', 'jade'
 
+app.locals or= pretty: true if app.get 'env' is 'development'
+
+# Routing.
 dish = require './routes/dish'
 order = require './routes/order'
 

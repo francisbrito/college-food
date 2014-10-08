@@ -14,6 +14,7 @@
   "author": "Francis Brito <fr.br94@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.9.5"
+    "express": "^4.9.5",
+    "jade": "^1.7.0"
   }
 }
