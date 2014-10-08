@@ -33,6 +33,9 @@ app.use '/dish', dish
 # Provides means to list orders current user has made.
 app.use '/order', order
 
+# Serve static files.
+app.use '/public', express.static 'public'
+
 # Initialization.
 app.listen 3000, () ->
     console.log "Listening at http://localhost:#{port}"
