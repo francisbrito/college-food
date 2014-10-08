@@ -12,5 +12,8 @@
     "4fun"
   ],
   "author": "Francis Brito <fr.br94@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.5"
+  }
 }
