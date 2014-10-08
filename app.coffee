@@ -9,7 +9,7 @@ port    = process.env.PORT || 3000
 
 # Templating
 app.set 'views', path.join __dirname, 'views'
-app.set 'views engine', 'jade'
+app.set 'view engine', 'jade'
 
 app.locals or= pretty: true if app.get 'env' is 'development'
 
