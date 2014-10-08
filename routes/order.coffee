@@ -8,13 +8,13 @@ router = new Router
 #
 # Displays a list of recent orders the current user has done.
 router.get '/', (request, response) ->
-    response.send 'Order list view.'
+    response.render 'order/index'
 
 # Order details view.
 #
 # Displays pricing information about a given order.
 # Such as charge amount, estimated delivery time & order state.
 router.get '/:id', (request, response) ->
-    response.send 'Order details view.'
+    response.render 'order/details'
 
 module.exports = router

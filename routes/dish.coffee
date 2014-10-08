@@ -9,13 +9,13 @@ router = new Router
 # Allows search for a particular dish.
 # Displays a list of cards with today's dishes.
 router.get '/', (request, response) ->
-    response.send 'Dish list view.'
+    response.render 'dish/index'
 
 # Dish details view.
 # 
 # Displays pricing, ingredients & delivery time for a particular dish.
 router.get '/:id', (request, response) ->
-    response.send 'Dish details.'
+    response.render 'dish/details'
 
 # Buy dish action.
 #
